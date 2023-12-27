@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAP Web</title>
+</head>
+<body>
+    <nav>
+        <h1>Kalkulator Barang</h1>
+    </nav>
+    <div class="container">
+    <table border="solid">
+        <tr>
+            <th>Kode</th>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td id="001">001</td>
+            <td>Barang A</td>
+            <td>10.000</td> 
+        </tr>
+        <tr>
+            <td id="002">001</td>
+            <td>Barang B</td>
+            <td>20.000</td> 
+        </tr>
+        <tr>
+            <td id="003">003</td>
+            <td>Barang C</td>
+            <td>30.000</td> 
+        </tr>
+        
+    </table>
+</div>
+<br>
+<br>
+<h1>Inputan User</h1>
+    <table border="line">
+        <tr>
+            <th>Masukan Kode</th>
+            <th>:</th>
+            <th>        
+                <input type="text" placeholder="Masukan Kode" id="kode">
+            </th>
+        </tr>
+        <tr>
+            <th>Banyak barang</th>
+            <th>:</th>
+            <th>        
+                <input type="number" placeholder="Banyaknya Barang" id="qty">
+            </th>
+        </tr>
+        <tr>
+         
+            <th>        
+                <button onclick="total()" id="submit">Submit</button>
+            </th>
+        </tr>
+        
+    </table>
+    <p id="hasil">Total pembayaran adalah :</p>
+
+
+
+    <script>
+        var kode = document.getElementById('kode').value;
+        var qty = document.getElementById('qty').value;
+        var kode1 = document.getElementById('001').value;
+
+
+        function total(){
+           
+            if (kode=== '001'){
+                var hasil = parseInt(qty)*10000;
+                alert ("Pembayaran yang harus dibayar : ").getElementById('hasil');
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

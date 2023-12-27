@@ -7,7 +7,7 @@
 </head>
 <body>
     <nav>
-        <h1>Kalkulator Barang</h1>
+        <h1>Kasir Sederhana</h1>
     </nav>
     <div class="container">
     <table border="solid">
@@ -71,13 +71,22 @@
     if (kode.value === '001'){
         var hasil = qty.value*10000;
         alert ("Pembayaran yang harus dibayar : " + hasil);
+        var uang_user=window.prompt("Uang User Anda Adalah?");
+        var sisa = uang_user-hasil;
+        alert("total kembalian anda adalah :" +sisa);
     }else if(kode.value === '002'){
         var hasil = qty.value*20000;
         alert ("Pembayaran yang harus dibayar : " + hasil);
+        var uang_user=window.prompt("Uang User Anda Adalah?");
+        var sisa = uang_user-hasil;
+        alert("total kembalian anda adalah :" +sisa);
     }
     else if(kode.value === '003'){
         var hasil = qty.value*30000;
         alert ("Pembayaran yang harus dibayar : " + hasil);
+        var uang_user=window.prompt("Uang User Anda Adalah?");
+        var sisa = uang_user-hasil;
+        alert("total kembalian anda adalah :" +sisa);
     }
     else{
         alert("Kode tidak ditemukan");
@@ -86,9 +95,7 @@
     
     document.getElementById('submit').addEventListener('click', total);
 
-    var uang_user=window.prompt("Uang User Anda Adalah?");
-    var sisa = uang_user-hasil;
-    var kembalian = window.alert("total kembalian anda adalah :" +sisa);
+   
     </script>
 
   

@@ -60,53 +60,40 @@
         </tr>
         
     </table>
-    <p id="hasil">Total pembayaran adalah :</p>
-
-
+ 
 
     <script>
-        var kode = document.getElementById('kode').value;
-        var qty = document.getElementById('qty').value;
-        var kode1 = document.getElementById('001').value;
+    var kode = document.getElementById('kode');
+    var qty = document.getElementById('qty');
+    var hasil = document.getElementById('hasil');
+    
+    function total(){
+    if (kode.value === '001'){
+        var hasil = qty.value*10000;
+        alert ("Pembayaran yang harus dibayar : " + hasil);
+    }else if(kode.value === '002'){
+        var hasil = qty.value*20000;
+        alert ("Pembayaran yang harus dibayar : " + hasil);
+    }
+    else if(kode.value === '003'){
+        var hasil = qty.value*30000;
+        alert ("Pembayaran yang harus dibayar : " + hasil);
+    }
+    else{
+        alert("Kode tidak ditemukan");
+    }}
+    
+    
+    document.getElementById('submit').addEventListener('click', total);
 
-
-        function total(){
-           
-            if (kode=== '001'){
-                var hasil = parseInt(qty)*10000;
-                alert ("Pembayaran yang harus dibayar : ").getElementById('hasil');
-            }
-        }
-        
+    var uang_user=window.prompt("Uang User Anda Adalah?");
+    var sisa = uang_user-hasil;
+    var kembalian = window.alert("total kembalian anda adalah :" +sisa);
     </script>
+
+  
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
